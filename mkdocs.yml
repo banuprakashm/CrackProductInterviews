@@ -28,6 +28,7 @@ nav:
   - Home: index.md
   - Arrays:
       - Day 1 - Basics: Arrays/Day1.md
+      - Day 2 - Two Pointers: Arrays/Day2.md
   - Strings:
       - Day 1 - Basics: Strings/Day1.md
   - Linked List:

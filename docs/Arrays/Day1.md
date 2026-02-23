@@ -94,3 +94,6 @@ def reverse_array(arr):
 Time Complexity: O(n) : Each element is accessed once.
 Space Complexity: O(n) : New reversed array is created.
 
+---
+
+### 🎯 Day 1 Completed Successfully! Practice both problems before moving to Day 2.

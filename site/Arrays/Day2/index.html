@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../Day1/">
+      
+      
+        <link rel="next" href="../../Strings/Day1/">
       
       
         
@@ -19,7 +23,7 @@
     
     
       
-        <title>Day2 - Crack Product Interviews</title>
+        <title>Day 2 - Two Pointers - Crack Product Interviews</title>
       
     
     
@@ -59,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#day-2-two-pointers-pattern" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -89,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Day2
+              Day 2 - Two Pointers
             
           </span>
         </div>
@@ -186,10 +195,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../Day1/" class="md-tabs__link">
           
   
@@ -366,28 +377,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -405,7 +419,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -439,6 +453,264 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day 2 - Two Pointers
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day 2 - Two Pointers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#in-this-day-we-learn-one-of-the-most-powerful-array-techniques-used-in-interviews-two-pointers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In this day, we learn one of the most powerful array techniques used in interviews — Two Pointers.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-1-two-sum-in-a-sorted-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Problem 1: Two Sum in a Sorted Array
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Problem 1: Two Sum in a Sorted Array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Problem Statement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Approach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-explanation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 Detailed Explanation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Solution (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#def-two_sum_sortedarr-target-left-0-right-lenarr-1-while-left-right-current_sum-arrleft-arrright-if-current_sum-target-return-true-elif-current_sum-target-left-1-else-right-1-return-false" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        def two_sum_sorted(arr, target): left = 0 right = len(arr) - 1 while left &lt; right: current_sum = arr[left] + arr[right] if current_sum == target: return True elif current_sum &lt; target: left += 1 else: right -= 1 return False
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="def two_sum_sorted(arr, target): left = 0 right = len(arr) - 1 while left &lt; right: current_sum = arr[left] + arr[right] if current_sum == target: return True elif current_sum &lt; target: left += 1 else: right -= 1 return False">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#time-space-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏱ Time &amp; Space Complexity
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-2-remove-duplicates-from-sorted-arrayreverse-an-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Problem 2: Remove Duplicates from Sorted ArrayReverse an Array
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Problem 2: Remove Duplicates from Sorted ArrayReverse an Array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-statement_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Problem Statement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approach_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Approach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-explanation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 Detailed Explanation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-python_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Solution (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-space-complexity_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏱ Time &amp; Space Complexity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#day-2-completed-successfully-practice-both-problems-before-moving-to-day-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Day 2 Completed Successfully! Practice both problems before moving to Day 3.
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -913,6 +1185,199 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#in-this-day-we-learn-one-of-the-most-powerful-array-techniques-used-in-interviews-two-pointers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In this day, we learn one of the most powerful array techniques used in interviews — Two Pointers.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-1-two-sum-in-a-sorted-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Problem 1: Two Sum in a Sorted Array
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Problem 1: Two Sum in a Sorted Array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Problem Statement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Approach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-explanation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 Detailed Explanation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Solution (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#def-two_sum_sortedarr-target-left-0-right-lenarr-1-while-left-right-current_sum-arrleft-arrright-if-current_sum-target-return-true-elif-current_sum-target-left-1-else-right-1-return-false" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        def two_sum_sorted(arr, target): left = 0 right = len(arr) - 1 while left &lt; right: current_sum = arr[left] + arr[right] if current_sum == target: return True elif current_sum &lt; target: left += 1 else: right -= 1 return False
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="def two_sum_sorted(arr, target): left = 0 right = len(arr) - 1 while left &lt; right: current_sum = arr[left] + arr[right] if current_sum == target: return True elif current_sum &lt; target: left += 1 else: right -= 1 return False">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#time-space-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏱ Time &amp; Space Complexity
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-2-remove-duplicates-from-sorted-arrayreverse-an-array" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Problem 2: Remove Duplicates from Sorted ArrayReverse an Array
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Problem 2: Remove Duplicates from Sorted ArrayReverse an Array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-statement_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Problem Statement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approach_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Approach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-explanation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 Detailed Explanation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-python_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Solution (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-space-complexity_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏱ Time &amp; Space Complexity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#day-2-completed-successfully-practice-both-problems-before-moving-to-day-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Day 2 Completed Successfully! Practice both problems before moving to Day 3.
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -929,9 +1394,102 @@
 
 
 
-  <h1>Day2</h1>
+<h1 id="day-2-two-pointers-pattern">📅 Day 2 – Two Pointers Pattern</h1>
+<h2 id="in-this-day-we-learn-one-of-the-most-powerful-array-techniques-used-in-interviews-two-pointers">In this day, we learn one of the most powerful array techniques used in interviews — <strong>Two Pointers</strong>.</h2>
+<hr />
+<h2 id="problem-1-two-sum-in-a-sorted-array">✅ Problem 1: Two Sum in a Sorted Array</h2>
+<hr />
+<h3 id="problem-statement">📌 Problem Statement</h3>
+<p>Given a sorted array of integers and a target value, determine whether there exist two numbers such that their sum equals the target.</p>
+<p>Return <code>True</code> if such a pair exists, otherwise return <code>False</code>.</p>
+<hr />
+<h3 id="approach">💡 Approach</h3>
+<p>Since the array is sorted, we can use two pointers:</p>
+<ul>
+<li>One pointer at the beginning.</li>
+<li>One pointer at the end.</li>
+</ul>
+<p>We adjust pointers based on the sum comparison.</p>
+<hr />
+<h3 id="detailed-explanation">🧠 Detailed Explanation</h3>
+<ol>
+<li>Initialize two pointers:</li>
+<li><code>left = 0</code></li>
+<li><code>right = len(arr) - 1</code></li>
+<li>Calculate the sum of elements at both pointers.</li>
+<li>If sum equals target → return True.</li>
+<li>If sum is less than target → move left pointer forward.</li>
+<li>If sum is greater than target → move right pointer backward.</li>
+<li>Continue until left &lt; right.</li>
+<li>If no pair found → return False.</li>
+</ol>
+<p>This works because the array is sorted.</p>
+<hr />
+<h3 id="solution-python">💻 Solution (Python)</h3>
+<h2 id="def-two_sum_sortedarr-target-left-0-right-lenarr-1-while-left-right-current_sum-arrleft-arrright-if-current_sum-target-return-true-elif-current_sum-target-left-1-else-right-1-return-false"><div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">two_sum_sorted</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+    <span class="n">left</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">right</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
 
+    <span class="k">while</span> <span class="n">left</span> <span class="o">&lt;</span> <span class="n">right</span><span class="p">:</span>
+        <span class="n">current_sum</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">left</span><span class="p">]</span> <span class="o">+</span> <span class="n">arr</span><span class="p">[</span><span class="n">right</span><span class="p">]</span>
 
+        <span class="k">if</span> <span class="n">current_sum</span> <span class="o">==</span> <span class="n">target</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">True</span>
+        <span class="k">elif</span> <span class="n">current_sum</span> <span class="o">&lt;</span> <span class="n">target</span><span class="p">:</span>
+            <span class="n">left</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">right</span> <span class="o">-=</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="kc">False</span>
+</code></pre></div></h2>
+<h3 id="time-space-complexity">⏱ Time &amp; Space Complexity</h3>
+<p>Time Complexity: O(n) : Each element is visited at most once.
+Space Complexity: O(1) : No additional data structures used.</p>
+<hr />
+<h2 id="problem-2-remove-duplicates-from-sorted-arrayreverse-an-array">✅ Problem 2: Remove Duplicates from Sorted ArrayReverse an Array</h2>
+<hr />
+<h3 id="problem-statement_1">📌 Problem Statement</h3>
+<p>Given a sorted array, remove duplicates in-place such that each element appears only once. Return the number of unique elements.</p>
+<hr />
+<h3 id="approach_1">💡 Approach</h3>
+<p>Use two pointers:</p>
+<ul>
+<li>One pointer (i) keeps track of unique position.</li>
+<li>Another pointer (j) scans the array.</li>
+</ul>
+<hr />
+<h3 id="detailed-explanation_1">🧠 Detailed Explanation</h3>
+<ol>
+<li>If the array is empty → return 0.</li>
+<li>Set pointer i = 0.</li>
+<li>Traverse from index 1 to end using pointer j.</li>
+<li>If arr[j] is different from arr[i]:<ul>
+<li>Increment i</li>
+<li>Assign arr[i] = arr[j]</li>
+</ul>
+</li>
+<li>After traversal, return i + 1.
+This ensures duplicates are overwritten.</li>
+</ol>
+<hr />
+<h3 id="solution-python_1">💻 Solution (Python)</h3>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">remove_duplicates</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">arr</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">arr</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">!=</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+</code></pre></div>
+<hr />
+<h3 id="time-space-complexity_1">⏱ Time &amp; Space Complexity</h3>
+<p>Time Complexity: O(n) : Single traversal of the array.
+Space Complexity: O(1) : In-place modification without extra space.</p>
+<h3 id="day-2-completed-successfully-practice-both-problems-before-moving-to-day-3">🎯 Day 2 Completed Successfully! Practice both problems before moving to Day 3.</h3>
 
 
 
