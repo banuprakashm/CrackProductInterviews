@@ -1,10 +1,11 @@
 # 📅 Day 1 – Array Basics
 
-In this day, we focus on fundamental array operations that are commonly asked in coding interviews.
-
+## In this day, we focus on fundamental array operations that are commonly asked in coding interviews.
 ---
 
 ## ✅ Problem 1: Find Maximum Element in an Array
+
+---
 
 ### 📌 Problem Statement
 Given an array of integers, find and return the maximum element present in the array.
@@ -40,10 +41,10 @@ def find_max(arr):
             max_element = num
 
     return max_element
-
+```
 ---
 
- ### ⏱ Time & Space Complexity
+### ⏱ Time & Space Complexity
 
 Time Complexity: O(n) : We scan the array once where n is number of elements.
 Space Complexity: O(1) : No extra space is used.
@@ -51,6 +52,8 @@ Space Complexity: O(1) : No extra space is used.
 ---
 
 ## ✅ Problem 2: Reverse an Array
+
+---
 
 ### 📌 Problem Statement
 Given an array, reverse the elements and return the reversed array.

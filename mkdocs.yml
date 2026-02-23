@@ -1,1 +1,40 @@
-site_name: My Docs
+site_name: Crack Product Interviews
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+    - content.code.annotate
+    - search.highlight
+    - search.suggest
+    - search.share
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.emoji
+  - attr_list
+
+nav:
+  - Home: index.md
+  - Arrays:
+      - Day 1 - Basics: Arrays/Day1.md
+  - Strings:
+      - Day 1 - Basics: Strings/Day1.md
+  - Linked List:
+      - Coming Soon: LinkedList/coming-soon.md
+  - Trees:
+      - Coming Soon: Trees/coming-soon.md
+  - Graphs:
+      - Coming Soon: Graphs/coming-soon.md
+  - Dynamic Programming:
+      - Coming Soon: DynamicProgramming/coming-soon.md
