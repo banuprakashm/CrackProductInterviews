@@ -3,7 +3,7 @@
 A community-driven repository to master **Data Structures & Algorithms** with  
 **day-wise structured problems, detailed explanations, and optimized solutions**.
 
-🌐 Live Website: https://YOURUSERNAME.github.io/CrackProductInterviews/
+🌐 Live Website: https://banuprakashm.github.io/CrackProductInterviews/
 
 ---
 
