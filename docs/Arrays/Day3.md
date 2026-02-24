@@ -115,4 +115,4 @@ def length_of_longest_substring(s):
 Time Complexity: O(n) : Each character is visited at most twice.
 Space Complexity: O(min(n, m)) : Set stores unique characters.
 
-### 🎯 Day 2 Completed Successfully! Practice both problems before moving to Day 3.
+### 🎯 Day 3 Completed Successfully! Practice both problems before moving to Day 4.
