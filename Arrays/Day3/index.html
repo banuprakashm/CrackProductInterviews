@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../Day2/">
+      
+      
+        <link rel="next" href="../../Strings/Day1/">
       
       
         
@@ -19,7 +23,7 @@
     
     
       
-        <title>Day3 - Crack Product Interviews</title>
+        <title>Day 3 - Sliding Window - Crack Product Interviews</title>
       
     
     
@@ -59,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#day-3-sliding-window-pattern" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -89,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Day3
+              Day 3 - Sliding Window
             
           </span>
         </div>
@@ -186,10 +195,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../Day1/" class="md-tabs__link">
           
   
@@ -366,28 +377,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -405,7 +419,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -467,6 +481,264 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day 3 - Sliding Window
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day 3 - Sliding Window
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#in-this-day-we-learn-the-sliding-window-technique-which-helps-optimize-problems-involving-subarrays-or-continuous-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In this day, we learn the Sliding Window technique, which helps optimize problems involving subarrays or continuous sequences.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-1-maximum-sum-subarray-of-size-k" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Problem 1: Maximum Sum Subarray of Size K
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Problem 1: Maximum Sum Subarray of Size K">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Problem Statement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Approach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-explanation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 Detailed Explanation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Solution (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#def-max_subarray_sumarr-k-window_sum-sumarrk-max_sum-window_sum-for-i-in-rangek-lenarr-window_sum-arri-window_sum-arri-k-max_sum-maxmax_sum-window_sum-return-max_sum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        def max_subarray_sum(arr, k): window_sum = sum(arr[:k]) max_sum = window_sum for i in range(k, len(arr)): window_sum += arr[i] window_sum -= arr[i - k] max_sum = max(max_sum, window_sum) return max_sum
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="def max_subarray_sum(arr, k): window_sum = sum(arr[:k]) max_sum = window_sum for i in range(k, len(arr)): window_sum += arr[i] window_sum -= arr[i - k] max_sum = max(max_sum, window_sum) return max_sum">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#time-space-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏱ Time &amp; Space Complexity
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-2-longest-substring-without-repeating-characters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Problem 2: Longest Substring Without Repeating Characters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Problem 2: Longest Substring Without Repeating Characters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-statement_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Problem Statement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approach_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Approach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-explanation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 Detailed Explanation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-python_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Solution (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-space-complexity_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏱ Time &amp; Space Complexity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#day-2-completed-successfully-practice-both-problems-before-moving-to-day-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Day 2 Completed Successfully! Practice both problems before moving to Day 3.
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -941,6 +1213,199 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#in-this-day-we-learn-the-sliding-window-technique-which-helps-optimize-problems-involving-subarrays-or-continuous-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In this day, we learn the Sliding Window technique, which helps optimize problems involving subarrays or continuous sequences.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-1-maximum-sum-subarray-of-size-k" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Problem 1: Maximum Sum Subarray of Size K
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Problem 1: Maximum Sum Subarray of Size K">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Problem Statement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Approach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-explanation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 Detailed Explanation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Solution (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#def-max_subarray_sumarr-k-window_sum-sumarrk-max_sum-window_sum-for-i-in-rangek-lenarr-window_sum-arri-window_sum-arri-k-max_sum-maxmax_sum-window_sum-return-max_sum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        def max_subarray_sum(arr, k): window_sum = sum(arr[:k]) max_sum = window_sum for i in range(k, len(arr)): window_sum += arr[i] window_sum -= arr[i - k] max_sum = max(max_sum, window_sum) return max_sum
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="def max_subarray_sum(arr, k): window_sum = sum(arr[:k]) max_sum = window_sum for i in range(k, len(arr)): window_sum += arr[i] window_sum -= arr[i - k] max_sum = max(max_sum, window_sum) return max_sum">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#time-space-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏱ Time &amp; Space Complexity
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-2-longest-substring-without-repeating-characters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Problem 2: Longest Substring Without Repeating Characters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Problem 2: Longest Substring Without Repeating Characters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-statement_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Problem Statement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approach_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Approach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-explanation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 Detailed Explanation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-python_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Solution (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-space-complexity_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏱ Time &amp; Space Complexity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#day-2-completed-successfully-practice-both-problems-before-moving-to-day-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Day 2 Completed Successfully! Practice both problems before moving to Day 3.
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -957,9 +1422,92 @@
 
 
 
-  <h1>Day3</h1>
+<h1 id="day-3-sliding-window-pattern">📅 Day 3 – Sliding Window Pattern</h1>
+<h2 id="in-this-day-we-learn-the-sliding-window-technique-which-helps-optimize-problems-involving-subarrays-or-continuous-sequences">In this day, we learn the <strong>Sliding Window technique</strong>, which helps optimize problems involving subarrays or continuous sequences.</h2>
+<hr />
+<h2 id="problem-1-maximum-sum-subarray-of-size-k">✅ Problem 1: Maximum Sum Subarray of Size K</h2>
+<hr />
+<h3 id="problem-statement">📌 Problem Statement</h3>
+<p>Given an array of integers and a number <code>k</code>, find the maximum sum of any contiguous subarray of size <code>k</code>.</p>
+<hr />
+<h3 id="approach">💡 Approach</h3>
+<p>Instead of calculating every subarray sum repeatedly (which is inefficient), we use a sliding window:</p>
+<ul>
+<li>Calculate sum of first <code>k</code> elements.</li>
+<li>Slide the window forward by removing the left element and adding the new right element.</li>
+</ul>
+<hr />
+<h3 id="detailed-explanation">🧠 Detailed Explanation</h3>
+<ol>
+<li>Compute the sum of first <code>k</code> elements.</li>
+<li>Store it as <code>max_sum</code>.</li>
+<li>Start from index <code>k</code>.</li>
+<li>Add current element to window.</li>
+<li>Subtract element that is leaving the window.</li>
+<li>Update <code>max_sum</code>.</li>
+<li>Continue until end of array.</li>
+</ol>
+<p>This reduces unnecessary repeated summation.</p>
+<hr />
+<h3 id="solution-python">💻 Solution (Python)</h3>
+<h2 id="def-max_subarray_sumarr-k-window_sum-sumarrk-max_sum-window_sum-for-i-in-rangek-lenarr-window_sum-arri-window_sum-arri-k-max_sum-maxmax_sum-window_sum-return-max_sum"><div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">max_subarray_sum</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+    <span class="n">window_sum</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">arr</span><span class="p">[:</span><span class="n">k</span><span class="p">])</span>
+    <span class="n">max_sum</span> <span class="o">=</span> <span class="n">window_sum</span>
 
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)):</span>
+        <span class="n">window_sum</span> <span class="o">+=</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">window_sum</span> <span class="o">-=</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="n">k</span><span class="p">]</span>
+        <span class="n">max_sum</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">max_sum</span><span class="p">,</span> <span class="n">window_sum</span><span class="p">)</span>
 
+    <span class="k">return</span> <span class="n">max_sum</span>
+</code></pre></div></h2>
+<h3 id="time-space-complexity">⏱ Time &amp; Space Complexity</h3>
+<p>Time Complexity: O(n) : Each element is processed once.
+Space Complexity: O(1) : Only variables are used.</p>
+<hr />
+<h2 id="problem-2-longest-substring-without-repeating-characters">✅ Problem 2: Longest Substring Without Repeating Characters</h2>
+<hr />
+<h3 id="problem-statement_1">📌 Problem Statement</h3>
+<p>Given a string, find the length of the longest substring without repeating characters.</p>
+<hr />
+<h3 id="approach_1">💡 Approach</h3>
+<p>Use sliding window with a set:</p>
+<ul>
+<li>Expand window by adding characters.</li>
+<li>If duplicate found, shrink from left.</li>
+<li>Track maximum length.</li>
+</ul>
+<hr />
+<h3 id="detailed-explanation_1">🧠 Detailed Explanation</h3>
+<ol>
+<li>Use two pointers left and right.</li>
+<li>Maintain a set to track characters in window.</li>
+<li>If character not in set → add it.</li>
+<li>If duplicate found → remove from left until unique.</li>
+<li>Update maximum length during traversal.</li>
+</ol>
+<hr />
+<h3 id="solution-python_1">💻 Solution (Python)</h3>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">length_of_longest_substring</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="n">char_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="n">left</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">max_length</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">right</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)):</span>
+        <span class="k">while</span> <span class="n">s</span><span class="p">[</span><span class="n">right</span><span class="p">]</span> <span class="ow">in</span> <span class="n">char_set</span><span class="p">:</span>
+            <span class="n">char_set</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">left</span><span class="p">])</span>
+            <span class="n">left</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="n">char_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">right</span><span class="p">])</span>
+        <span class="n">max_length</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">max_length</span><span class="p">,</span> <span class="n">right</span> <span class="o">-</span> <span class="n">left</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">max_length</span>
+</code></pre></div>
+<hr />
+<h3 id="time-space-complexity_1">⏱ Time &amp; Space Complexity</h3>
+<p>Time Complexity: O(n) : Each character is visited at most twice.
+Space Complexity: O(min(n, m)) : Set stores unique characters.</p>
+<h3 id="day-2-completed-successfully-practice-both-problems-before-moving-to-day-3">🎯 Day 2 Completed Successfully! Practice both problems before moving to Day 3.</h3>
 
 
 
