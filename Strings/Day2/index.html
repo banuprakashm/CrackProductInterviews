@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../Day1/">
+      
+      
+        <link rel="next" href="../../LinkedList/coming-soon/">
       
       
         
@@ -19,7 +23,7 @@
     
     
       
-        <title>📅 Strings – Day 2 - Hashing Pattern - Crack Product Interviews</title>
+        <title>Day 2 - Hashing - Crack Product Interviews</title>
       
     
     
@@ -94,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              📅 Strings – Day 2 - Hashing Pattern
+              Day 2 - Hashing
             
           </span>
         </div>
@@ -211,10 +215,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../Day1/" class="md-tabs__link">
           
   
@@ -516,28 +522,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -555,7 +564,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -589,6 +598,264 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day 2 - Hashing
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day 2 - Hashing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#in-this-day-we-learn-how-to-use-hashing-frequency-counting-to-solve-string-problems-efficiently" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In this day, we learn how to use hashing (frequency counting) to solve string problems efficiently.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-1-valid-anagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Problem 1: Valid Anagram
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Problem 1: Valid Anagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Problem Statement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Approach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-explanation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 Detailed Explanation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Solution (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#def-is_anagrams-t-if-lens-lent-return-false-count-for-char-in-s-countchar-countgetchar-0-1-for-char-in-t-if-char-not-in-count-return-false-countchar-1-if-countchar-0-return-false-return-true" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        def is_anagram(s, t): if len(s) != len(t): return False count = {} for char in s: count[char] = count.get(char, 0) + 1 for char in t: if char not in count: return False count[char] -= 1 if count[char] &lt; 0: return False return True
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="def is_anagram(s, t): if len(s) != len(t): return False count = {} for char in s: count[char] = count.get(char, 0) + 1 for char in t: if char not in count: return False count[char] -= 1 if count[char] &lt; 0: return False return True">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#time-space-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏱ Time &amp; Space Complexity
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-2-first-non-repeating-character" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Problem 2: First Non-Repeating Character
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Problem 2: First Non-Repeating Character">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-statement_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Problem Statement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approach_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Approach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-explanation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 Detailed Explanation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-python_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Solution (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-space-complexity_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏱ Time &amp; Space Complexity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#day-2-completed-successfully-practice-both-problems-before-moving-to-day-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Day 2 Completed Successfully! Practice both problems before moving to Day 3.
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
