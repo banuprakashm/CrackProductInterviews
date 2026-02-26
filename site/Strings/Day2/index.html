@@ -19,7 +19,7 @@
     
     
       
-        <title>Day2 - Crack Product Interviews</title>
+        <title>📅 Strings – Day 2 - Hashing Pattern - Crack Product Interviews</title>
       
     
     
@@ -59,6 +59,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#strings-day-2-hashing-pattern" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -89,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Day2
+              📅 Strings – Day 2 - Hashing Pattern
             
           </span>
         </div>
@@ -969,6 +974,199 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#in-this-day-we-learn-how-to-use-hashing-frequency-counting-to-solve-string-problems-efficiently" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In this day, we learn how to use hashing (frequency counting) to solve string problems efficiently.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-1-valid-anagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Problem 1: Valid Anagram
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Problem 1: Valid Anagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-statement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Problem Statement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Approach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-explanation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 Detailed Explanation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Solution (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#def-is_anagrams-t-if-lens-lent-return-false-count-for-char-in-s-countchar-countgetchar-0-1-for-char-in-t-if-char-not-in-count-return-false-countchar-1-if-countchar-0-return-false-return-true" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        def is_anagram(s, t): if len(s) != len(t): return False count = {} for char in s: count[char] = count.get(char, 0) + 1 for char in t: if char not in count: return False count[char] -= 1 if count[char] &lt; 0: return False return True
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="def is_anagram(s, t): if len(s) != len(t): return False count = {} for char in s: count[char] = count.get(char, 0) + 1 for char in t: if char not in count: return False count[char] -= 1 if count[char] &lt; 0: return False return True">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#time-space-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏱ Time &amp; Space Complexity
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problem-2-first-non-repeating-character" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Problem 2: First Non-Repeating Character
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ Problem 2: First Non-Repeating Character">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-statement_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 Problem Statement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approach_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Approach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-explanation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 Detailed Explanation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solution-python_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💻 Solution (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-space-complexity_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⏱ Time &amp; Space Complexity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#day-2-completed-successfully-practice-both-problems-before-moving-to-day-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 Day 2 Completed Successfully! Practice both problems before moving to Day 3.
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -985,9 +1183,92 @@
 
 
 
-  <h1>Day2</h1>
+<h1 id="strings-day-2-hashing-pattern">📅 Strings – Day 2 - Hashing Pattern</h1>
+<h2 id="in-this-day-we-learn-how-to-use-hashing-frequency-counting-to-solve-string-problems-efficiently">In this day, we learn how to use hashing (frequency counting) to solve string problems efficiently.</h2>
+<hr />
+<h2 id="problem-1-valid-anagram">✅ Problem 1:  Valid Anagram</h2>
+<hr />
+<h3 id="problem-statement">📌 Problem Statement</h3>
+<p>Given two strings <code>s</code> and <code>t</code>, determine whether <code>t</code> is an anagram of <code>s</code>.</p>
+<p>An anagram means both strings contain the same characters with the same frequency.</p>
+<hr />
+<h3 id="approach">💡 Approach</h3>
+<p>Use a frequency counter (hash map).</p>
+<p>If both strings have identical character counts → they are anagrams.</p>
+<hr />
+<h3 id="detailed-explanation">🧠 Detailed Explanation</h3>
+<ol>
+<li>If lengths of both strings are different → return False.</li>
+<li>Create a dictionary to count characters in string <code>s</code>.</li>
+<li>Traverse string <code>t</code>:</li>
+<li>Reduce frequency for each character.</li>
+<li>If character not present → return False.</li>
+<li>If all counts become zero → return True.</li>
+</ol>
+<hr />
+<h3 id="solution-python">💻 Solution (Python)</h3>
+<h2 id="def-is_anagrams-t-if-lens-lent-return-false-count-for-char-in-s-countchar-countgetchar-0-1-for-char-in-t-if-char-not-in-count-return-false-countchar-1-if-countchar-0-return-false-return-true"><div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">is_anagram</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">False</span>
 
+    <span class="n">count</span> <span class="o">=</span> <span class="p">{}</span>
 
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+        <span class="n">count</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">=</span> <span class="n">count</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">char</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">t</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">char</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">count</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        <span class="n">count</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="n">count</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="k">return</span> <span class="kc">True</span>
+</code></pre></div></h2>
+<h3 id="time-space-complexity">⏱ Time &amp; Space Complexity</h3>
+<p>Time Complexity: O(n) : Each string is traversed once.
+Space Complexity: O(1) : At most 26 characters stored (for lowercase English letters).</p>
+<hr />
+<h2 id="problem-2-first-non-repeating-character">✅ Problem 2: First Non-Repeating Character</h2>
+<hr />
+<h3 id="problem-statement_1">📌 Problem Statement</h3>
+<p>Given a string s, return the index of the first non-repeating character. If none exists, return -1.</p>
+<hr />
+<h3 id="approach_1">💡 Approach</h3>
+<ol>
+<li>Count frequency of each character.</li>
+<li>Traverse string again.</li>
+<li>Return index of first character with frequency 1.</li>
+</ol>
+<hr />
+<h3 id="detailed-explanation_1">🧠 Detailed Explanation</h3>
+<ol>
+<li>Use a dictionary to store frequency.</li>
+<li>First pass → count characters.</li>
+<li>Second pass → find first with count 1.</li>
+<li>If none found → return -1.</li>
+</ol>
+<p>This avoids nested loops and improves efficiency.</p>
+<hr />
+<h3 id="solution-python_1">💻 Solution (Python)</h3>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">first_unique_char</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="n">freq</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+        <span class="n">freq</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">=</span> <span class="n">freq</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">char</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">char</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">freq</span><span class="p">[</span><span class="n">char</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">index</span>
+
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+</code></pre></div>
+<hr />
+<h3 id="time-space-complexity_1">⏱ Time &amp; Space Complexity</h3>
+<p>Time Complexity: O(n) : Two passes through string.
+Space Complexity: O(1) :Fixed character set size.</p>
+<hr />
+<h3 id="day-2-completed-successfully-practice-both-problems-before-moving-to-day-3">🎯 Day 2 Completed Successfully! Practice both problems before moving to Day 3.</h3>
 
 
 
