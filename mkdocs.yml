@@ -33,6 +33,7 @@ nav:
   - Strings:
       - Day 1 - Basics: Strings/Day1.md
       - Day 2 - Hashing: Strings/Day2.md
+      - Day 3 - Sliding Window: Strings/Day3.md
   - Linked List:
       - Coming Soon: LinkedList/coming-soon.md
   - Trees:
