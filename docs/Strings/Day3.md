@@ -6,6 +6,12 @@
 ## ✅ Problem 1:  Longest Substring Without Repeating Characters
 ---
 
+### 🏢 Asked In
+
+`Amazon` `Microsoft` `Google` `Facebook`
+
+---
+
 ### 📌 Problem Statement
 Given a string `s`, find the length of the longest substring without repeating characters.
 
@@ -66,6 +72,12 @@ Space Complexity: O(min(n, m)) : Set stores unique characters.
 ---
 
 ## ✅ Problem 2: Longest Repeating Character Replacement
+
+---
+
+### 🏢 Asked In
+
+`Amazon` `Microsoft` `Facebook`
 
 ---
 

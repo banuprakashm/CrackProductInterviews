@@ -8,6 +8,12 @@
 
 ---
 
+### 🏢 Asked In
+
+`Amazon` `Flipkart` `Uber`
+
+---
+
 ### 📌 Problem Statement
 Given an array of integers and a number `k`, find the maximum sum of any contiguous subarray of size `k`.
 

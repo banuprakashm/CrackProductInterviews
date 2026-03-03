@@ -8,6 +8,12 @@
 
 ---
 
+### 🏢 Asked In
+
+`Amazon` `Microsoft` `Google` `Facebook`
+
+---
+
 ### 📌 Problem Statement
 Given a sorted array of integers and a target value, determine whether there exist two numbers such that their sum equals the target.
 
@@ -71,6 +77,12 @@ Space Complexity: O(1) : No additional data structures used.
 ---
 
 ## ✅ Problem 2: Remove Duplicates from Sorted ArrayReverse an Array
+
+---
+
+### 🏢 Asked In
+
+`Amazon` `Apple` `Google`
 
 ---
 

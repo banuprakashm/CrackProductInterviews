@@ -7,6 +7,12 @@
 
 ---
 
+### 🏢 Asked In
+
+`Amazon` `Microsoft` `Infosys`
+
+---
+
 ### 📌 Problem Statement
 Given an array of integers, find and return the maximum element present in the array.
 
@@ -54,6 +60,13 @@ Space Complexity: O(1) : No extra space is used.
 ## ✅ Problem 2: Reverse an Array
 
 ---
+
+### 🏢 Asked In
+
+`TCS` `Wipro` `Amazon`
+
+---
+
 
 ### 📌 Problem Statement
 Given an array, reverse the elements and return the reversed array.

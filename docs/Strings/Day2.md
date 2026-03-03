@@ -6,6 +6,12 @@
 ## ✅ Problem 1:  Valid Anagram
 ---
 
+### 🏢 Asked In
+
+`Amazon` `Microsoft` `Bloomberg`
+
+---
+
 ### 📌 Problem Statement
 Given two strings `s` and `t`, determine whether `t` is an anagram of `s`.
 
@@ -63,6 +69,12 @@ Space Complexity: O(1) : At most 26 characters stored (for lowercase English let
 ---
 
 ## ✅ Problem 2: First Non-Repeating Character
+
+---
+
+### 🏢 Asked In
+
+`Amazon` `Google` `Uber`
 
 ---
 

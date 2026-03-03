@@ -7,6 +7,12 @@
 
 ---
 
+### 🏢 Asked In
+
+`Amazon` `Microsoft` `Paypal`
+
+---
+
 ### 📌 Problem Statement
 Given a string `s`, return the reversed string.
 
@@ -46,6 +52,12 @@ Space Complexity: O(n) : A new reversed string is created.
 ---
 
 ## ✅ Problem 2: Valid Palindrome
+
+---
+
+### 🏢 Asked In
+
+`Amazon` `Google` `Facebook`
 
 ---
 
